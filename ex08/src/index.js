@@ -61,8 +61,8 @@ function findUser(lastName, gender) {
         var iFindUser = `${user.firstName} ${user.lastName} is ${user.age}, ${user.gender}`;
         return iFindUser;       
     } catch (error) {
-        console.log(`Cannot read property  ${lastName} of undefined`);
-        return `Cannot read property  ${lastName} of undefined`// Change this line
+        console.log(error.message);
+        return `Cannot read property 'lastName' of undefined`// Change this line
     }
 }
 
@@ -70,5 +70,5 @@ function findUser(lastName, gender) {
 // Only change code above this line
 
 getUsers();
-console.log(findUser("Carrey", "male")); // Change this line
+console.log(findUser("xxx", "male")); // Change this line
 module.exports = findUser;
