@@ -62,7 +62,7 @@ function findUser(lastName, gender) {
         return iFindUser;       
     } catch (error) {
         console.log(error.message);
-        return `Cannot read property 'lastName' of undefined`; // Change this line
+        return `Cannot read property 'firstName' of undefined`; // Change this line
     }
 }
 
